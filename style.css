@@ -290,7 +290,13 @@ img {
     width: 90%;
 }
 .skills__js {
+    width: 70%;
+}
+.skills__rt {
     width: 50%;
+}
+.skills__ss {
+    width: 60%;
 }
 .skills__py {
     width: 90%;
