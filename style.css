@@ -321,6 +321,11 @@ a {
 
 /* CONTACT SECTION */
 
+.contact__container {
+    width: 50%;
+    margin: 0 auto;
+}
+
 .contact__input {
     width: 100%;
     font-size: var(--normal-font-size);
@@ -341,6 +346,24 @@ a {
     cursor: pointer;
     margin-left: auto;
 }
+
+/* MEDIA QUERY FOR CONTACT SECTION */
+
+@media screen and (max-width: 768px){
+    .contact__container {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .contact__container {
+        width: 90%;
+        border: 1px solid red;
+    }
+}
+
+/* FOOTER SCETION */
+
 .footer {
     background-color: var(--second-color);
     color: #fff;
@@ -426,12 +449,12 @@ a {
         width: 300px;
     }
 
-    .contact__form {
+    /* .contact__form {
         width: 360px;
     }
     .contact__container {
         justify-items: center;
-    }
+    } */
 }
 @media screen and (min-width: 1024px) {
     .bd-grid {
