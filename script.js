@@ -24,27 +24,48 @@
 
 // navLink.forEach(n => n.addEventListener('click', linkAction))
 
-const sr = ScrollReveal({
-    origin: 'top',
-    distance: '80px',
-    duration: 2000,
-    reset: true
-})
+// REAVEALING FUNCTIONALITY
 
-sr.reveal('.home__title', {})
-sr.reveal('.button', {delay: 200})
-sr.reveal('.home__img', {delay: 400})
-sr.reveal('.home__social-icon', {interval: 200})
+// const sr = ScrollReveal({
+//     origin: 'top',
+//     distance: '80px',
+//     duration: 2000,
+//     reset: true
+// })
 
-sr.reveal('.about__img', {})
-sr.reveal('.about__subtitle', {delay: 200})
-sr.reveal('.about__text', {delay: 400})
+// sr.reveal('.home__title', {})
+// sr.reveal('.button', {delay: 200})
+// sr.reveal('.home__img', {delay: 400})
+// sr.reveal('.home__social-icon', {interval: 200})
 
-sr.reveal('.skills__subtitle', {})
-sr.reveal('.skills__text', {delay: 200})
-sr.reveal('.skills__data', {interval: 200})
-sr.reveal('.skills__img', {delay: 400})
+// sr.reveal('.about__img', {})
+// sr.reveal('.about__subtitle', {delay: 200})
+// sr.reveal('.about__text', {delay: 400})
 
-sr.reveal('.work__img', {interval: 200})
+// sr.reveal('.skills__subtitle', {})
+// sr.reveal('.skills__text', {delay: 200})
+// sr.reveal('.skills__data', {interval: 200})
+// sr.reveal('.skills__img', {delay: 400})
 
-sr.reveal('.contact__input', {interval: 200})
+// sr.reveal('.work__img', {interval: 200})
+
+// sr.reveal('.contact__input', {interval: 200})
+
+
+// WORK SECTION CARDS
+
+const panels = document.querySelectorAll('.work__panel');
+
+panels.forEach((panel) => {
+    panel.addEventListener('click', () => {
+        removeActiveClasses();
+        console.log('panel clicked');
+        panel.classList.add('active');
+    });
+});
+
+function removeActiveClasses() {
+    panels.forEach((panel) => {
+        panel.classList.remove('active');
+    });
+}
