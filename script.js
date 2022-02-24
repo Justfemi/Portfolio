@@ -69,3 +69,32 @@ function removeActiveClasses() {
         panel.classList.remove('active');
     });
 }
+
+// TOGGLE NAV ITEM ACTIVE
+// let menu = document.querySelector('.nav__menu');
+// let navItem = document.querySelectorAll('.nav__menu a');
+// // const activePage = window.location.pathname;
+
+// navItem.forEach(item => {
+//     item.addEventListener('click', () => {
+//         console.log('nav-link clicked');
+//         menu.classList.add('active');
+//     });
+// });
+
+// HAMBURGER FUNCTIONALITY
+let menuIcon = document.querySelector('.nav__toggle i');
+let menu = document.querySelector('.nav__menu');
+let navLinks = document.querySelectorAll('.nav__menu a');
+
+menuIcon.addEventListener('click', () => {
+    menu.classList.toggle('show');
+    //chnage menu icon to X
+    menuIcon.classList.toggle('bx bx-cancel');
+})
+
+navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        menu.classList.remove('show');
+    });
+})
