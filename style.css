@@ -351,6 +351,36 @@ a {
     }
 }
 
+/* SKILLS SECTION */
+
+.skills {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.skills__box .title {
+    font-size: 24px;
+}
+
+.skills__items {
+    display: inline-flex;
+}
+
+.skills__items .btn {
+    margin-right: 15px;
+    border: 2px solid var(--second-color);
+    padding: 5px 10px;
+    color: var(--first-color);
+    font-size: 18px;
+    font-weight: 700;
+}
+
+/* MEDIA QUERY FOR SKILLS SECTION */
+@media screen and (max-width: 600px){
+    .skills {
+        width: 90%;
+    }
+}
 /* WORK SECTION */
 
 .work {
