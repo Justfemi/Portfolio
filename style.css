@@ -146,6 +146,7 @@ a {
     color:#fff;
     padding: 6px;
     border-radius: 3px;
+    width: 75px;
     transition: all .5s ease-in-out;
 }
 
@@ -443,9 +444,20 @@ a {
 }
 
 /* MEDIA QURIES FOR WORK SECTION */
+@media screen and (max-width: 780px) {
+    .work__panel h3 {
+        bottom: 45px;
+        left: 50px;
+    }
+}
+
 @media(max-width: 480px) {
     .work__container {
         width: 100vw;
+    }
+
+    .work__panel h3 {
+        font-size: 17px;
     }
 
     .work__panel:nth-of-type(4), 
