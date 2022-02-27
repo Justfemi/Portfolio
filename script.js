@@ -1,29 +1,3 @@
-// const showMenu = ( toggleId, navId) => {
-//     const toggle = document.getElementById(toggleId),
-//     nav = document.getElementById(navId)
-
-//     if ( toggle && nav ) {
-//         toggle.addEventListener('click', ()=>{
-//             nav.classList.toggle('show')
-//         })
-//     }
-// }//
-// showMenu ( 'nav-toggle','nav-menu' )
-
-// let opeNav = document.querySelector('')
-
-// const navLink = document.querySelectorAll('.nav__link')
-
-// function linkAction() {
-//     navLink.forEach(n => n.classList.remove('active'))
-//     this.classList.add('active')
-
-//     const navMenu = document.getElementById('nav-menu')
-//     navMenu.classList.remove('show ')
-// }
-
-// navLink.forEach(n => n.addEventListener('click', linkAction))
-
 // REAVEALING FUNCTIONALITY
 
 const sr = ScrollReveal({
@@ -42,12 +16,13 @@ sr.reveal('.about__img', {})
 sr.reveal('.about__subtitle', {delay: 200})
 sr.reveal('.about__text', {delay: 400})
 
-sr.reveal('.skills__subtitle', {})
-sr.reveal('.skills__text', {delay: 200})
-sr.reveal('.skills__data', {interval: 200})
-sr.reveal('.skills__img', {delay: 400})
+sr.reveal('.skills__box', {})
+sr.reveal('.skills__box .title', {delay: 200})
+sr.reveal('.skills__items', {interval: 200})
 
-sr.reveal('.work__img', {interval: 200})
+sr.reveal('.work__body', {})
+sr.reveal('.work__container', {delay: 200})
+sr.reveal('.work__panel', {interval: 200})
 
 sr.reveal('.contact__input', {interval: 200})
 
