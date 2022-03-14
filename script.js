@@ -66,10 +66,11 @@ menuIcon.addEventListener('click', () => {
     menu.classList.toggle('show');
     //chnage menu icon to X
     menuIcon.classList.toggle('bx bx-cancel');
-})
+});
 
 navLinks.forEach(link => {
     link.addEventListener('click', () => {
         menu.classList.remove('show');
     });
-})
+});
+ 
