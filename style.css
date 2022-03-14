@@ -332,6 +332,13 @@ a {
     }
 }
 
+@media screen and (max-width: 900px){
+    .about__container {
+        width: 90%;
+    }
+}
+
+
 /* SKILLS SECTION */
 
 .skills {
@@ -345,6 +352,13 @@ a {
 
 .skills__items {
     display: inline-flex;
+}
+
+.skills__bag {
+    border: 2px solid red;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
 
 .skills__items .btn {
@@ -364,7 +378,7 @@ a {
 }
 /* WORK SECTION */
 
-.work {
+/* .work {
     margin: -35px auto 0;
     height: 80vh;
 }
@@ -422,10 +436,10 @@ a {
 .work__panel.active h3, .work__panel.active a  {
     opacity: 1;
     transition: opacity 0.3s ease-in 0.4s;
-}
+} */
 
 /* MEDIA QURIES FOR WORK SECTION */
-@media screen and (max-width: 780px) {
+/* @media screen and (max-width: 780px) {
     .work__panel h3 {
         bottom: 45px;
         left: 50px;
@@ -440,15 +454,7 @@ a {
     .work__panel h3 {
         font-size: 17px;
     }
-
-    .work__panel:nth-of-type(4), 
-    .work__panel:nth-of-type(5),
-    .work__panel:nth-of-type(6), 
-    .work__panel:nth-of-type(7),
-    .work__panel:nth-of-type(8) {
-        display: none;
-    }
-}
+} */
 
 /* CONTACT SECTION */
 
