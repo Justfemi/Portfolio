@@ -27,36 +27,6 @@ sr.reveal('.work__panel', {interval: 100})
 sr.reveal('.contact__input', {interval: 100})
 
 
-// WORK SECTION CARDS
-
-// const panels = document.querySelectorAll('.work__panel');
-
-// panels.forEach((panel) => {
-//     panel.addEventListener('click', () => {
-//         removeActiveClasses();
-//         console.log('panel clicked');
-//         panel.classList.add('active');
-//     });
-// });
-
-// function removeActiveClasses() {
-//     panels.forEach((panel) => {
-//         panel.classList.remove('active');
-//     });
-// }
-
-// TOGGLE NAV ITEM ACTIVE
-// let menu = document.querySelector('.nav__menu');
-// let navItem = document.querySelectorAll('.nav__menu a');
-// // const activePage = window.location.pathname;
-
-// navItem.forEach(item => {
-//     item.addEventListener('click', () => {
-//         console.log('nav-link clicked');
-//         menu.classList.add('active');
-//     });
-// });
-
 // HAMBURGER FUNCTIONALITY
 let menuIcon = document.querySelector('.nav__toggle i');
 let menu = document.querySelector('.nav__menu');
@@ -75,31 +45,31 @@ navLinks.forEach(link => {
 });
 
 // SWIPER FOR PROJECTS SECTION 
-let swiper = new Swiper(".work__body ", {
-    spaceBetween: 30,
-    centeredSlides: true,
-    autoplay: {
-        delay: 5000,
-        disableOnInteraction: false,
-    },
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-    },
-    loop: true,
-    breakpoints: {
-        0: {
-            slidesPerView: 1,
-        },
-        600: {
-            slidesPerView: 2,
-        },
-        768: {
-            slidesPerView: 2,
-        },
-        1024: {
-            slidesPerView: 3,
-        },
-    },
-});
+// let swiper = new Swiper(".work__body ", {
+//     spaceBetween: 30,
+//     centeredSlides: true,
+//     autoplay: {
+//         delay: 5000,
+//         disableOnInteraction: false,
+//     },
+//     pagination: {
+//         el: ".swiper-pagination",
+//         clickable: true,
+//     },
+//     loop: true,
+//     breakpoints: {
+//         0: {
+//             slidesPerView: 1,
+//         },
+//         600: {
+//             slidesPerView: 2,
+//         },
+//         768: {
+//             slidesPerView: 2,
+//         },
+//         1024: {
+//             slidesPerView: 3,
+//         },
+//     },
+// });
  
