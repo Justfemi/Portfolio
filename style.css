@@ -352,10 +352,11 @@ a {
 
 .skills__items {
     display: inline-flex;
+    flex-wrap: wrap;
 }
 
 .skills__bag {
-    border: 2px solid red;
+    /* border: 2px solid red; */
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -368,6 +369,7 @@ a {
     color: var(--first-color);
     font-size: 18px;
     font-weight: 700;
+    margin-bottom: 15px;
 }
 
 /* MEDIA QUERY FOR SKILLS SECTION */
@@ -377,6 +379,10 @@ a {
     }
 }
 /* WORK SECTION */
+
+.work {
+    overflow-x: hidden;
+}
 
 /* .work {
     margin: -35px auto 0;

@@ -75,7 +75,7 @@ navLinks.forEach(link => {
 });
 
 // SWIPER FOR PROJECTS SECTION 
-let swiper = new Swiper(".home-slider", {
+let swiper = new Swiper(".work__body ", {
     spaceBetween: 30,
     centeredSlides: true,
     autoplay: {
