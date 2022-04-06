@@ -380,7 +380,6 @@ a {
 
 .work__container {
     display: flex;
-    border: solid red;
     width: 95%;
     margin: 0 auto;
 }

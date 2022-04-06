@@ -5,7 +5,7 @@ const sr = ScrollReveal({
     distance: '80px',
     duration: 1000,
     reset: true
-})
+});
 
 sr.reveal('.home__title', {})
 sr.reveal('.button', {delay: 100})
