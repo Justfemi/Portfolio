@@ -33,6 +33,7 @@ let menu = document.querySelector('.nav__menu');
 let navLinks = document.querySelectorAll('.nav__menu a');
 
 menuIcon.addEventListener('click', () => {
+    // console.log('clicked')
     menu.classList.toggle('show');
     //chnage menu icon to X
     menuIcon.classList.toggle('bx bx-cancel');
@@ -43,33 +44,3 @@ navLinks.forEach(link => {
         menu.classList.remove('show');
     });
 });
-
-// SWIPER FOR PROJECTS SECTION 
-// let swiper = new Swiper(".work__body ", {
-//     spaceBetween: 30,
-//     centeredSlides: true,
-//     autoplay: {
-//         delay: 5000,
-//         disableOnInteraction: false,
-//     },
-//     pagination: {
-//         el: ".swiper-pagination",
-//         clickable: true,
-//     },
-//     loop: true,
-//     breakpoints: {
-//         0: {
-//             slidesPerView: 1,
-//         },
-//         600: {
-//             slidesPerView: 2,
-//         },
-//         768: {
-//             slidesPerView: 2,
-//         },
-//         1024: {
-//             slidesPerView: 3,
-//         },
-//     },
-// });
- 
