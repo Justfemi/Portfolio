@@ -1,11 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap");
+/* ind font-family : Ppapyrus */
 :root {
   --header-height: 3rem;
   --font-semi: 600;
   --first-color: #4070f4;
   --second-color: #0e2431;
-  --body-font: 'Poppins', sanserif;
+  --body-font: 'Nunito', sanserif;
   --big-font-size: 2rem;
   --h2-font-size: 1.25rem;
   --normal-font-size: 0.938rem;
@@ -284,6 +284,10 @@ a {
 
 /* ABOUT SECTION */
 
+.about {
+    background:rgba(146, 161, 176, .15);
+}
+
 .about__container {
     width: 70%;
     margin: 10px auto;
@@ -292,8 +296,13 @@ a {
     justify-content: space-between;
 }
 
+.about__subtitle {
+    /* color: red; */
+    font-size: 1.5rem;
+}
+
 .about__text {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     line-height: 30px;
 }
 
@@ -304,6 +313,7 @@ a {
     width: 300px;
     height: 350px;
 }
+
 
 .about__img img {
     width: 100%;
@@ -374,11 +384,12 @@ a {
 /* WORK SECTION */
 
 .work__container {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(31rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
     gap: 2rem;
+    /* border: solid red; */
 }
 
 .work__container > a{
@@ -386,9 +397,15 @@ a {
 }
 
 .work__panel {
-    height: 25rem;
+    height: 18rem;
     overflow: hidden;
     position: relative;
+    border: 1px solid #222;
+}
+
+.work__panel:hover {
+    transform: scale(1.05);
+    transition: all .5s ease-in-out;
 }
 
 .work__panel:hover .content {
@@ -419,16 +436,16 @@ a {
 }
 
 .work__panel .content h3{
-    font-size: 2rem;
-    color: #000;
+    font-size: 1.8rem;
+    color: #4070f4;
     animation: fadeIn .2s linear backwards;
 }
 
 .work__panel .content p{
     font-size: 1.2rem;
-    color: #000;
-    padding: 1rem 0;
-    line-height: 2;
+    color: #222;
+    padding: .5rem 0;
+    line-height: 1.5;
     animation: fadeIn .2s linear backwards .4s;
 }
 

@@ -22,7 +22,7 @@ sr.reveal('.skills__items', {interval: 100})
 
 sr.reveal('.work__body', {})
 sr.reveal('.work__container', {delay: 100})
-sr.reveal('.work__panel', {interval: 100})
+// sr.reveal('.work__panel', {interval: 100})
 
 sr.reveal('.contact__input', {interval: 100})
 
