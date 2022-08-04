@@ -399,6 +399,8 @@ a {
 .work__panel {
     height: 18rem;
     overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 5px 8px 12px 3px #888888;
     position: relative;
     border: 1px solid #222;
 }
