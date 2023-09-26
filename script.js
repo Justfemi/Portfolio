@@ -33,7 +33,9 @@ let menu = document.querySelector('.nav__menu');
 let navLinks = document.querySelectorAll('.nav__menu a');
 
 menuIcon.addEventListener('click', () => {
+    // console.log('clicked')
     menu.classList.toggle('show');
+    //chnage menu icon to X
     menuIcon.classList.toggle('bx bx-cancel');
 });
 

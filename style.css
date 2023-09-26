@@ -122,6 +122,13 @@ a {
     transition: all .5s ease-in-out;
 }
 
+#menu-btn {
+    font-size: 3rem;
+    color: var(--first-color);
+    cursor: pointer;
+    display: none;
+  }
+
 @media screen and (max-width: 850px){
     .nav__menu {
       position: fixed;
@@ -148,10 +155,10 @@ a {
         z-index: 1000;
     }
 
-    .nav__toggle:hover i {
-      border: 1px solid #222;
+    /* .nav__toggle:hover i {
+      border: 1px solid var(--first-color);
       border-radius: 3px;
-    }
+    } */
 
     .show {
       right: 0;
@@ -162,15 +169,9 @@ a {
         top: 30px;
         color: #fff;
     }
-}
 
-@media screen and (max-width: 500px){
-    .nav__menu {
-        position: fixed;
-        top: 0;
-        right: -100%;
-        width: 80vw;
-        height: 90vh;
+    #menu-btn {
+        display: inline-block;
     }
 }
 
