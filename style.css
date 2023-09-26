@@ -108,7 +108,7 @@ a {
 
 .nav__toggle {
     font-size: 2.5rem;
-    color: var(--second-color);
+    color: var(--first-color);
     cursor: pointer;
     display: none;
 }
@@ -128,8 +128,8 @@ a {
       top: 0;
       right: -100%;
       /* right: 0; */
-      width: 40vw;
-      height: 100%;
+      width: 100%;
+      height: 70vh;
       padding: 2rem;
       background-color: var(--second-color);
       transition: .5s;
@@ -145,7 +145,7 @@ a {
 
     .nav__toggle {
         display: block;
-        z-index: 100;
+        z-index: 1000;
     }
 
     .nav__toggle:hover i {
@@ -159,7 +159,8 @@ a {
 
     .nav__toggle .bx-cancel {
         left: 10px;
-        top: 20px;
+        top: 30px;
+        color: #fff;
     }
 }
 
